@@ -6,3 +6,7 @@
 .canvas {
     max-width: 400px
 }
+
+.row{
+    margin: 20px auto;
+}

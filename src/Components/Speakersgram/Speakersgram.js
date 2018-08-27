@@ -3,6 +3,8 @@ import {FormControl, FormGroup, ControlLabel, Button, Col, Row,Grid,Image, Modal
 import ReactHTMLConverter from 'react-html-converter/node';
 import "./Speakersgram.css";
 import html2canvas from 'html2canvas';
+import '../../css/ProjectSkywriting.css'
+
 
 class Speakersgram extends React.Component {
     constructor(props) {
@@ -14,13 +16,14 @@ class Speakersgram extends React.Component {
             discription:'',
             image:null,
             show: false,
-            modal: "https://cbsnews1.cbsistatic.com/hub/i/2018/08/26/c5c28efc-c187-4512-9ff8-355c13532834/cbsn-fusion-senator-john-mccain-has-died-at-the-age-of-81-thumbnail-1643605-640x360.jpg"
+            modal: null
         };
 
         this.handleChange = this.handleChange.bind(this);
         this.fileChangedHandler = this.fileChangedHandler.bind(this);
         this.handleShow = this.handleShow.bind(this);
         this.handleClose = this.handleClose.bind(this);
+        this.download = this.download.bind(this);
     }
 
 
@@ -42,6 +45,11 @@ fileChangedHandler = (event) => {
 handleClose() {
     this.setState({ show: false });
 }
+
+download(){
+    window.open(this.state.modal)
+}
+
 
 async handleShow () {
     let canvas = await html2canvas(document.getElementById("my-node")).then(function(canvas) {
@@ -65,6 +73,11 @@ render() {
 
         <Grid>
             <Row>
+                <div className="banner_content"></div>
+
+            </Row>
+            <Row className= "row">
+
                 <Col md={4} mdOffset={2} >
                     <form>
 
@@ -118,13 +131,14 @@ render() {
             <Row>
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>Speaker Gram</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <Image className="canvas" rounded src={this.state.modal} />
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button onClick={this.handleClose}>Close</Button>
+
+                        <Button><a href={this.state.modal} download={this.state.name}>Download</a></Button>
                     </Modal.Footer>
                 </Modal>
 
