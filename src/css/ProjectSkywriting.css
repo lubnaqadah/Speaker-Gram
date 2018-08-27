@@ -1,0 +1,86 @@
+.social_media_links {
+  max-width: 100%;
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.banner_content {
+  background-color: "white";
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 214px;
+}
+.dummy_FormEssentials {
+  background-image: url("../images/DummyImage.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 260px;
+}
+.dummy_DynamicHeight {
+  background-image: url("../images/DummyImage.png");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.white_background {
+  background-color: rgb(255,255,255);
+}
+.footer_content {
+  background-image: url("../images/footer.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 214px;
+}
+
+.dynamic_columns {
+  resize: vertical;
+  overflow: auto;
+}
+.dummy_DynamicIndividualHeight {
+  background-image: url("../images/DummyImage.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2em;
+}
+
+.word_fanciness {
+  color: rgb(28,52,101);
+  fill: rgb(28,52,101);
+}
+
+.text_to_top {
+  vertical-align: middle;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customNumLevelsSlider{
+    top: 50px;
+    background-color: rgb(247, 205, 122);
+}
+
+.customRemoveGlypicon{
+  top: 10px;
+  color: rgb(247, 154, 26); 
+}
+
+.customCriteriaSlider{
+    top: 10px;
+}
+.rangeslider__fill {
+  background-color: rgb(242, 102, 32) !important;
+}
+
+.grey__fill1 {
+  background-color: rgb(242, 242, 242);
+}
