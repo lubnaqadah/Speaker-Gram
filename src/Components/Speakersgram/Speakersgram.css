@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.banner_content {
+    background-color: "white";
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    width: auto;
+    height: 214px;
+    justify-content: center
+}
+
 .image{
     max-height: 200px;
     max-width: 200px

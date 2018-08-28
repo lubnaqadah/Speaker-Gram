@@ -2,7 +2,6 @@ import React from "react";
 import {FormControl, FormGroup, ControlLabel, Button, Col, Row,Grid,Image, Modal} from 'react-bootstrap';
 import "./Speakersgram.css";
 import html2canvas from 'html2canvas';
-import '../../css/ProjectSkywriting.css'
 
 
 class Speakersgram extends React.Component {
