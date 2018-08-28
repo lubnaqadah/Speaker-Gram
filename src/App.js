@@ -15,7 +15,6 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-<!--          <Route exact path = "/" component = {ProjectSkywritingDemo} />-->
           <Route exact path = "/" component = {Speakersgram} />
         </div>
       </BrowserRouter>
