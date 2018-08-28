@@ -1,6 +1,5 @@
 import React from "react";
-import {FormControl, FormGroup, ControlLabel, Button, Col, Row,Grid,Image, Modal, Popover} from 'react-bootstrap';
-import ReactHTMLConverter from 'react-html-converter/node';
+import {FormControl, FormGroup, ControlLabel, Button, Col, Row,Grid,Image, Modal} from 'react-bootstrap';
 import "./Speakersgram.css";
 import html2canvas from 'html2canvas';
 import '../../css/ProjectSkywriting.css'
@@ -62,13 +61,7 @@ async handleShow () {
 
 
 render() {
-    const popover = (
-        <Popover id="modal-popover" title="popover">
-            very popover. such engagement
-        </Popover>
-    );
-
-
+    
     return (
 
         <Grid>
