@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ProjectSkywritingDemo from './ProjectSkywritingDemo';
+//import ProjectSkywritingDemo from './ProjectSkywritingDemo';
 //react nav stuff
 import { BrowserRouter, Route} from 'react-router-dom'
 import { createBrowserHistory } from 'history';
