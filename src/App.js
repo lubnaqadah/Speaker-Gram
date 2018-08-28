@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ProjectSkywritingDemo from './ProjectSkywritingDemo';
+//import ProjectSkywritingDemo from './ProjectSkywritingDemo';
 //react nav stuff
 import { BrowserRouter, Route} from 'react-router-dom'
 import { createBrowserHistory } from 'history';
@@ -15,8 +15,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Route exact path = "/" component = {ProjectSkywritingDemo} />
-          <Route exact path = "/Speakersgram" component = {Speakersgram} />
+          <Route exact path = "/" component = {Speakersgram} />
         </div>
       </BrowserRouter>
 

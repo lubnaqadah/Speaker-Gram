@@ -68,7 +68,7 @@ import Range from 'rc-slider/lib/Range';
 import Tooltip from 'rc-tooltip';
 
 //Query string bullshit
-const queryString = require('query-string');
+//const queryString = require('query-string');
 
 //3rd Party File-Saver
 var FileSaver = require('file-saver');
