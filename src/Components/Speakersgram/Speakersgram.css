@@ -1,12 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,800');
+
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
+.footer{
+    text-align: left;
+    padding:0 20px;
+    background-color: #4e5b69;
+/*    padding: 0;*/
+    margin: 0;
+    width: 100%;
+    min-height: 50px;
+    font-size: 1.8em;
+    color: #e3e3e3;
+    line-height: 2em
+}
+
+.imageBox{
+    text-align: center;
+/*    padding-bottom: 20px;*/
+    padding-right: 0;
+    padding-left:0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #e3e3e3;
+    min-height: 60vh;
+    color: #c3655d
+}
+
+.logo {
+    width: 50%;
+    text-align: right;
+    align-items: flex-start;
+}
 .banner_content {
     background-color: "white";
-    background-image: url("../images/banner.png");
+    background-image: url("../../images/banner.png");
     background-repeat: no-repeat;
     width: auto;
     height: 214px;

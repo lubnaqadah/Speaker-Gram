@@ -2,6 +2,7 @@ import React from "react";
 import {FormControl, FormGroup, ControlLabel, Button, Col, Row,Grid,Image, Modal} from 'react-bootstrap';
 import "./Speakersgram.css";
 import html2canvas from 'html2canvas';
+import logo from "../../images/PCSDLogo250.png"
 
 
 class Speakersgram extends React.Component {
@@ -11,7 +12,6 @@ class Speakersgram extends React.Component {
             name: '',
             title:'',
             company:'',
-            discription:'',
             image:null,
             show: false,
             modal: null
@@ -60,7 +60,7 @@ async handleShow () {
 
 
 render() {
-    
+
     return (
 
         <Grid>
@@ -70,7 +70,7 @@ render() {
             </Row>
             <Row className= "row">
 
-                <Col md={4} mdOffset={2} >
+                <Col md={4}  >
                     <form>
 
                         <FormGroup controlId="formControlsText">
@@ -101,12 +101,14 @@ render() {
                     </form>
                 </Col>  
 
-                <Col md={4} id="my-node" >
+                <Col md={4} mdOffset={1} id="my-node" className="imageBox" >
+                    
+                    <h1 className="name">{this.state.name.toUpperCase()}</h1>
+                    <h3 className="imageBox">{this.state.title.charAt(0).toUpperCase() + this.state.title.slice(1)}{this.state.company ? ", " + this.state.company.charAt(0).toUpperCase() + this.state.company.slice(1) : ""}</h3>
+                    <Image className="image"  src={this.state.image} />
 
-                    <h2>{this.state.name}</h2>
-                    <h3>{this.state.title.charAt(0).toUpperCase() + this.state.title.slice(1)}{this.state.company ? ", " + this.state.company.charAt(0).toUpperCase() + this.state.company.slice(1) : ""}</h3>
-                    <p>{this.state.discription}</p>
-                    <Image className="image" rounded src={this.state.image} />
+                    <Image className="logo" src={logo} />
+                    <p className="footer">#PRODUCTCAMPSD</p>
 
                 </Col>
 
